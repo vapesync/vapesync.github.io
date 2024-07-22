@@ -30,8 +30,10 @@ body{
 
 
 
-a{
-    text-decoration: none;
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
 }
 
 ul{
@@ -55,8 +57,17 @@ ul{
     color: var(--white);
     font-size: 60px;
     margin-left: 10px;
-
 }
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo.text:hover {text-decoration: none;}
 
 /* Nav menu */
 .nav{
@@ -71,12 +82,14 @@ ul{
 .menu a{
     display: block;
     padding: 30px;
+    text-decoration: none;
     color: var(--white);
 
 }
 
 .menu a:hover{
     background-color: var(--grey);
+    text-decoration: none;
 }
 
 .nav{
@@ -166,6 +179,7 @@ ul{
     }
 
     .menu a:hover{
+        text-decoration: none;
         background-color: transparent;
         color: var(--grey);
         
